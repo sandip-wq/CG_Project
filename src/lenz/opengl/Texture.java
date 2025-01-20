@@ -37,7 +37,7 @@ public class Texture {
 
 	private InputStream createInputStreamFromResourceName(String resourceName) {
 		if (!resourceName.startsWith("/")) {
-			resourceName = "/res/textures/" + resourceName;
+			resourceName = "/res/textures" + resourceName;
 		}
 		return getClass().getResourceAsStream(resourceName);
 	}
